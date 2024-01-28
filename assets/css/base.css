@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+  --color-one: #103178;
+  --color-two: #ffc800;
+  --color-three: #47b5ed;
+  --color-four: #5b6c8f;
+  --color-five: #F0F2F5;
+  --font: 'Inria Serif', serif;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Button  */
+.button {
+  background: var(--color-four);
+  color: white;
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 45px;
+  border: 2px solid var(--color-four);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.button:hover {
+  color: var(--color-four);
+  background: white;
+}
+
+.button-one {
+  background: var(--color-one);
+  border-color: var(--color-one);
+}
+
+.button-one:hover {
+  color: var(--color-one);
+}
+
+
+.button-two {
+  background: var(--color-two);
+  border-color: var(--color-two);
+}
+
+.button-two:hover {
+  color: var(--color-two);
+}
+
+.button-large {
+  padding: 14px 40px;
+  font-size: 20px;
+}
+
+/* Responsive  */
+@media (max-width: 1199px) {
+  .button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+/* End Responsive  */
+/*End Button  */
